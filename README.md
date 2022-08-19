@@ -2,7 +2,7 @@
 
 ## Prediksi Harga Pasar Web
 <p>
-Prediksi Harga Pasar Web merupakan website yang menyediakan fitur prediksi untuk pengguna mengetahui harga pasar (untuk saat ini hanya beras) dalam beberapa waktu kedepan. Website ini dirancang untuk membantu Masyarakat dalam memprediksi perkiraan harga pasar di waktu yang akan datang.
+Prediksi Harga Pasar Web merupakan website yang menyediakan fitur prediksi untuk pengguna mengetahui harga pasar (untuk saat ini hanya beras) dalam beberapa waktu kedepan. Website ini dirancang untuk membantu Pengguna dalam memprediksi perkiraan harga pasar di waktu yang akan datang.
 </p>
 
 ## Demo
