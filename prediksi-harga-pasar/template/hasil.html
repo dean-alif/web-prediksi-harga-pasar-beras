@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediksi Harga Pasar</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Assets/Icon_Website_Prediksi_Harga_Pasar-removebg-preview.png') }}">
+    <link href="{{ url_for('static', filename='styles/hasil.css') }}" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+<section class="h-100 w-100" style="box-sizing: border-box; background-color: #e9eef2">
+
+    <div class="content-3-5 d-flex flex-column align-items-center h-100 flex-lg-row" style="font-family: 'Poppins', sans-serif">
+
+        <div class="position-relative d-none d-lg-block h-100 width-left">
+            <img class="position-absolute img-fluid centered" src="{{ url_for('static', filename='Assets/Images/vecteezy_businessman-make-money-growth-business-success-financial_-removebg-preview.png') }}" alt="businessman-make-money-growth-business-success-financial" />
+        </div>
+
+        <div class="d-flex mx-auto align-items-left justify-content-left width-right mx-lg-0">
+
+            <div class="right mx-lg-0 mx-auto">
+                <a href="{{url_for('form_prediksi')}}">
+                    <span class="iconify icon mb-4" data-icon="eva:arrow-back-outline" data-width="45"></span>
+                </a>
+                <div class="align-items-center justify-content-center d-lg-none d-flex">
+                    <img class="img-fluid" src="{{ url_for('static', filename='Assets/Images/vecteezy_businessman-make-money-growth-business-success-financial_-removebg-preview.png') }}" alt="businessman-make-money-growth-business-success-financial" alt="businessman-make-money-growth-business-success-financial" />
+                </div>
+
+                <h3 class="title-text">Hasil Prediksi</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Prediksi Pasar</th>
+                            <th scope="col">Kualitas Barang</th>
+                            <th scope="col">Prediksi Pada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">{{hasil}}/Kg</td>
+                            <td id="quality">{{quality}}</td>
+                            <td>{{month}} - {{year}}</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+</section> 
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<!-- Icon Iconify -->
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</body>
+</html>

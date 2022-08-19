@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediksi Harga Pasar</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Assets/Icon_Website_Prediksi_Harga_Pasar-removebg-preview.png') }}">
+    <link href="{{ url_for('static', filename='styles/formpage.css') }}" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+<section class="h-100 w-100" style="box-sizing: border-box; background-color: #e9eef2">
+    
+
+    <div class="content-3-5 d-flex flex-column align-items-center h-100 flex-lg-row" style="font-family: 'Poppins', sans-serif">
+        
+
+        <div class="position-relative d-none d-lg-block h-100 width-left">
+            <img class="position-absolute img-fluid centered" src="{{ url_for('static', filename='Assets/Images/vecteezy_businessman-make-money-growth-business-success-financial_-removebg-preview.png') }}" alt="businessman-make-money-growth-business-success-financial" />
+        </div>
+
+        <div class="d-flex mx-auto align-items-left justify-content-left width-right mx-lg-0">
+
+            <div class="right mx-lg-0 mx-auto">
+                <a href="{{url_for('index')}}">
+                    <span class="iconify icon mb-4" data-icon="eva:arrow-back-outline" data-width="45"></span>
+                </a>
+                <div class="align-items-center justify-content-center d-lg-none d-flex">
+                    <img class="img-fluid" src="{{ url_for('static', filename='Assets/Images/vecteezy_businessman-make-money-growth-business-success-financial_-removebg-preview.png') }}" alt="businessman-make-money-growth-business-success-financial" />
+                </div>
+                <h3 class="title-text">Form Prediksi</h3>
+                <p class="caption-text">Sebelum memulai prediksi anda diharuskan<br />mengisi form dibawah ini.</p>
+    
+                <form style="margin-top: 1.5rem" action="{{url_for('predict')}}" method="POST">
+                    <div style="margin-bottom: 1.75rem">
+                        <label for="" class="d-block input-label">Pasar Yang Prediksi</label>
+                        <select class="form-select mt-3" required>
+                            <option selected disabled value="">-</option>
+                            <option value="hargaberas">Harga Beras</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 1.75rem">
+                        <label for="" class="d-block input-label">Kualitas Barang</label>
+                        <select name="kl_beras" class="form-select mt-3" required>
+                            <option selected disabled value="">-</option>
+                            <option value="1">Premium</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Luar Kualitas</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 1.75rem">
+                        <label for="" class="d-block input-label">Tahun</label>
+                        <select name="Tahun" class="form-select mt-3" required>
+                            <option selected disabled value="">-</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+
+                    <div style="margin-bottom: 1.75rem">
+                        <label for="" class="d-block input-label">Bulan</label>
+                        <select name="Bulan" class="form-select mt-3" required>
+                            <option selected disabled value="">-</option>
+                            <option value="1">Januari</option>
+                            <option value="2">Februari</option>
+                            <option value="3">Maret</option>
+                            <option value="4">April</option>
+                            <option value="5">Mei</option>
+                            <option value="6">Juni</option>
+                            <option value="7">Juli</option>
+                            <option value="8">Agustus</option>
+                            <option value="9">September</option>
+                            <option value="10">Oktober</option>
+                            <option value="11">November</option>
+                            <option value="12">Desember</option>
+                        </select>
+                    </div>
+        
+                    <button class="btn btn-fill text-white d-block w-100" type="submit">Mulai Prediksi</button>
+                </form>
+<!-- 
+                <div id="show" class="bg-white mt-5 rounded-lg p-3 text-center mx-auto" style="width: 90%">
+                    <h4 style="background-color: #4f17d1; border-radius: 15px">Rp.{{hasil}}/Kg</h4>
+                </div> -->
+            
+            </div>
+        </div>
+    </div>
+
+</section> 
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<!-- Icon Iconify -->
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script></body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediksi Harga Pasar</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Assets/Icon_Website_Prediksi_Harga_Pasar-removebg-preview.png') }}">
+    <link href="{{ url_for('static', filename='styles/main.css') }}" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+<section class="h-100 w-100" id="header" style="box-sizing: border-box; background-color: #78A6C8">
+
+    <!-- Navigation Bar -->
+    <div class="container-xxl mx-auto p-0  position-relative header-2-3" style="font-family: 'Poppins', sans-serif;">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="#">
+                <img style="margin-right:0.75rem" src="{{ url_for('static', filename='Assets/Logo_Web_Prediksi_Harga_Pasar-removebg-preview.png') }}" width="170" height="80" alt="Logo Website Prediksi Harga Pasar">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog" aria-labelledby="targetModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content border-0" style="background-color: #326789;">
+                        <div class="modal-header border-0" style="padding:	2rem; padding-bottom: 0;">
+                            <a class="modal-title" id="targetModalLabel">
+                                <img style="margin-top:0.5rem" src="{{ url_for('static', filename='Assets/Logo_Web_Prediksi_Harga_Pasar-removebg-preview.png') }}" width="140" height="70" alt="Logo Website Prediksi Harga Pasar">
+                            </a>
+                            <button type="button" class="close btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body" style="padding:	2rem; padding-top: 0; padding-bottom: 0;">
+                            <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{{ url_for('index')}}" style="color: #232324;">Beranda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#main-content">Tentang Kami</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#footer">Kontak</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="{{ url_for('informasi')}}">Informasi</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="modal-footer border-0 gap-3" style="padding:	2rem; padding-top: 0.75rem">
+                            <button class="btn btn-fill border-0 text-dark"><a href="{{url_for('form_prediksi')}}" class="text-white text-decoration-none">Mulai Prediksi</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{url_for('index')}}" style="color: #E7E7E8;">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main-content">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('informasi')}}">Informasi</a>
+                    </li>
+                </ul>
+
+                <div class="gap-3">
+                    <button class="btn btn-fill text-white border-0"><a href="{{url_for('form_prediksi')}}" class="text-white text-decoration-none">Mulai Prediksi</a></button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Jumbotron -->
+        <div>
+            <div class="mx-auto d-flex flex-lg-row flex-column hero">
+            <!-- Left Column -->
+                <div class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center">
+                    <h1 class="title-text-big">Cari Tahu<br class=" d-lg-block d-none">Prediksi Harga Pasar Beberapa Waktu Kedepan</h1>
+                </div>
+
+            <!-- Right Column -->
+                <div class="right-column text-center d-flex justify-content-center pe-0">
+                    <img id="img-fluid" class="h-auto mw-100" src="{{ url_for('static', filename='Assets/Images/vecteezy_illustration-vector-graphic-cartoon-character-of-business_6445644-removebg-preview.png') }}" alt="illustration-vector-graphic-cartoon-character-of-business">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="h-100 w-100" id="main-content" style="box-sizing: border-box; background-color: #e9eef2; ">
+    
+    <div class="content-2-3 container-xxl mx-auto p-0  position-relative" style="font-family: 'Poppins', sans-serif">
+        <div class="text-center title-text">
+            <h1 class="text-title text-dark">Kelebihan Website Kami</h1>
+            <p class="text-caption" style="margin-left: 3rem; margin-right: 3rem">Anda dapat dengan mudah mengetahui prediksi harga pasar</p>
+        </div>
+
+        <div class="grid-padding text-center">
+            <div class="row">
+                <div class="col-lg-4 column">
+                    <div class="icon">
+                        <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-8.png"/>
+                    </div>
+                    <h3 class="icon-title text-dark">Mudah Digunakan</h3>
+                    <p class="icon-caption">Website dirancang minimalis <br/> sehingga mudah digunakan</p>
+                </div>
+
+                <div class="col-lg-4 column">
+                    <div class="icon">
+                        <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-9.png"/>
+                    </div>
+                    <h3 class="icon-title text-dark">Analitik Waktu Nyata</h3>
+                    <p class="icon-caption">Anda dapat memeriksa data <br/>  secara real time</p> 
+                </div>
+
+                <div class="col-lg-4 column">
+                    <div class="icon">
+                        <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-10.png"/>
+                    </div>
+                    <h3 class="icon-title text-dark">Kami Selalu Ada</h3>
+                    <p class="icon-caption">Untuk kenyamanan anda <br/> kami selalu ada melalui kontak</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="famouly-brands-darken" style="background-color: #e9eef2;">
+    
+    <div class="container">
+        <div class="row brand d-flex flex-lg-row flex-column align-items-center">
+            <div class="col-md-3 col-6 text-center my-md-auto">
+                <h3>Powered By :</h3>
+            </div>
+
+            <div class="col-md-3 col-6 text-center my-md-auto">
+                <img src="{{ url_for('static', filename='Assets/Images/Logo BPS.png') }}" alt="Badan Pusat Statistik Logo" class="img-fluid">
+            </div>
+
+            <div class="col-md-3 col-6 text-center my-md-auto mt-5 mt-md-0">
+                <img src="{{ url_for('static', filename='Assets/Images/Logo python.png') }}" alt="Python Logo" class="img-fluid">
+            </div>
+
+            <div class="col-md-3 col-6 text-center my-md-auto mt-5 mt-md-0">
+                <img src="{{ url_for('static', filename='Assets/Images/Logo bootstrap.png') }}" alt="Bootstrap Logo" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="h-100 w-100" id="footer" style="box-sizing: border-box; background-color: #78A6C8">
+
+		<div class="footer-2-3 container-xxl mx-auto position-relative p-0" style="font-family: 'Poppins', sans-serif">
+			<div class="border-color info-footer">
+				
+				<div class="mx-auto d-flex flex-column flex-lg-row align-items-center footer-info-space gap-4">
+                    <div class="d-flex flex-lg-row flex-column align-items-center justify-content-center">
+						<p style="margin: 0">Copyright © 2022 Prediksi Harga Pasar</p>
+					</div>
+
+					<nav class="mx-auto d-flex flex-wrap align-items-center justify-content-center gap-4">
+						<a href="https://www.bps.go.id/" class="footer-link" style="text-decoration: none">Sumber Data</a>
+						<span>|</span>
+						<a href="mailto:deanalifahmad49@gmail.com" class="footer-link" style="text-decoration: none">Kontak</a>
+						<span>|</span>
+						<a href="#header" class="footer-link" style="text-decoration: none">Beranda</a>
+					</nav>
+
+                    <a href="#">
+                        <img style="margin-right:0.75rem" src="{{ url_for('static', filename='Assets/Logo_Web_Prediksi_Harga_Pasar-removebg-preview.png') }}" width="170" height="80" alt="Logo Website Prediksi Harga Pasar">
+                    </a>
+				</div>
+
+			</div>
+		</div>
+
+</section> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>

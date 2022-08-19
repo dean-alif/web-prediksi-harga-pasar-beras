@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediksi Harga Pasar</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Assets/Icon_Website_Prediksi_Harga_Pasar-removebg-preview.png') }}">
+    <link href="{{ url_for('static', filename='styles/informasi.css') }}" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+
+<section class="contact-us-light-lick position-relative" style="font-family: 'Poppins', sans-serif; background-color: #fcfdff;">
+
+    <div class="container">
+        <div class="row d-block mx-0">
+            <h1 class="headline font-red-hat-display">Tujuan dan Alasan Kami</h1>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center gap-4 mt-5">
+            <p class="text-dark text-lg-center text-tujuan"> Kami ingin membuat website yang dapat digunakan untuk membantu mencari tahu prediksi harga pasar diwaktu yang akan datang. Dikarenakan data yang kami miliki bertipe historis, maka kami memutuskan untuk membuat sistem prediksi dengan menjadikan fitur harga sebagai value/nilai yang akan diprediksi.</h2>
+        </div>
+    </div>
+
+</section>
+
+<section class="h-100 w-100" style="box-sizing: border-box; background-color: #fcfdff;">
+
+    <div class="content-3-3 container-xxl mx-auto position-relative" style="font-family: 'Poppins', sans-serif">
+        <div class="d-flex flex-lg-row flex-column align-items-center">
+
+            <!-- Left Column -->
+            <div class="img-hero text-center justify-content-center d-flex">
+                <img id="hero" class="img-fluid" src="{{ url_for('static', filename='Assets/Images/keterangan-data-vector.png') }}" alt="" />
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
+                <h2 class="title-text text-dark">Keterangan Data</h2>
+
+                <ul style="padding: 0; margin: 0">
+                    <li class="list-unstyled" style="margin-bottom: 2rem">
+                        <h4 class="title-caption text-dark d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            <span class="circle text-white d-flex align-items-center justify-content-center">1</span>
+                            Nama Dataset
+                        </h4>
+                        <p class="text-caption">Rata-rata harga beras bulanan di tingkat<br class="d-sm-inline d-none"/>penggilingan menurut kualitas (Rupiah/Kg).</p>
+                    </li>
+
+                    <li class="list-unstyled" style="margin-bottom: 2rem">
+                        <h4 class="title-caption text-dark d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            <span class="circle text-white d-flex align-items-center justify-content-center">2</span>
+                            Sumber dan Format Dataset
+                        </h4>
+                        <a href="https://www.bps.go.id/indicator/36/500/1/harga-beras-di-penggilingan-menurut-kualitas.html" style="text-decoration: none;"> <p class="text-caption">Badan Pusat Statistik</a><br class="d-sm-inline d-none"/>XLSX (Excel)</p>  
+                    </li>
+
+                    <li class="list-unstyled" style="margin-bottom: 4rem">
+                        <h4 class="title-caption text-dark d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                            <span class="circle text-white d-flex align-items-center justify-content-center">3</span>
+                            Jumlah Record dan Fitur Yang Dimiliki Data
+                        </h4>
+                        <p class="text-caption">339 data, tercatat dari Januari 2013 – Mei 2022.<br class="d-sm-inline d-none"/>Tahun, Bulan, Kualitas Beras, Harga.</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="content" style="background-color: #fcfdff;">
+
+    <div class="container">
+        <div class="row content">
+            <div class="col-md-6  my-auto">
+                <img src="{{ url_for('static', filename='Assets/Images/algoritma.png') }}" alt="header" class="img-fluid">
+            </div>
+
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="tagline text-start">Menggunakan Algoritma</div>
+
+                <div class="headline mt-3 text-start">Linear Regression</div>
+
+                <div class="subheadline mt-4">Linear regression merupakan algoritma yang digunakan untuk memprediksi nilai suatu variabel berdasarkan nilai dari variabel lain.<br class="d-none d-md-block">Variabel yang ingin diprediksi disebut variabel dependen. Sedangkan, variabel yang digunakan untuk memprediksi nilai variabel lain disebut variabel independen.</div>
+
+                <div class="button-header">
+                    <a href="https://en.wikipedia.org/wiki/Linear_regression"><button class="btn btn-started">Selengkapnya</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="contact-us-light-lick position-relative" style="font-family: 'Poppins', sans-serif; background-color: #fcfdff;">
+
+    <div class="container">
+        <div class="row d-block mx-0">
+            <h4 class="title-text text-lg-center" style="font: 600 2.25rem/2.5rem Poppins, sans-serif;">Preprocessing Data</h4>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center gap-4 mt-5">
+            <p class="text-dark text-lg-center text-tujuan"> Contoh bentuk data :</p>
+        </div>
+
+        <table class="table table-hover" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th scope="col">Tahun</th>
+                    <th scope="col">Bulan</th>
+                    <th scope="col">Kualitas Barang</th>
+                    <th scope="col">Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">2013</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>7797.63</td>
+                </tr>
+                <tr>
+                    <td scope="row">2013</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>7773.26</td>
+                </tr>
+                <tr>
+                    <td scope="row">2013</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>7576.27</td>
+                </tr>
+                <tr>
+                    <td scope="row">2013</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>7420.72</td>
+                </tr>
+                <tr>
+                    <td scope="row">2013</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>7797.63</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="text-dark text-lg-start text-tujuan" style="margin-bottom: 2em;">Keterangan Kualitas Barang = nilai 1 : premium, nilai 2 : Medium, nilai 3 : Luar Kualitas</p>
+
+        <p class="text-dark text-lg-center text-tujuan" style="margin-bottom: 1em; font-weight: 600;">Berdasarkan Uji Normalitas Data</p>
+
+        <div class="d-flex align-items-center justify-content-start gap-4 mt-5" style="margin-bottom: 5em;">
+            <p class="text-dark text-lg-start text-tujuan">
+            1. Uji Kolmogorov Swirnov : dilakukan untuk mengetahui apakah suatu data berdistribusi normal atau tidak.<br class="d-sm-inline d-none"/>
+            Nilai P-Value yang didapat adalah : 0.5333835559112475 dimana p-value lebih dari > 0.05 yang menandakan data berdistribusi normal. Selain itu, gambar histogram yang membentuk lonceng dan puncaknya cenderung ke tengah pun mendukung bahwa datanya sudah berdistribusi normal.
+            </p>
+
+            <img src="{{ url_for('static', filename='Assets/Images/uji kolmogorov.png') }}" alt="header" class="img-fluid">
+        </div>
+
+        <div class="d-flex align-items-center justify-content-start gap-4 mt-5" style="margin-bottom: 5em;">
+            <p class="text-dark text-lg-start text-tujuan">
+                2. Uji Homoskedastitas : digunakan dalam menguji error atau galat dalam model statistik untuk melihat apakah varians atau keragaman dari error terpengaruh oleh faktor lain atau tidak.<br class="d-sm-inline d-none"/>
+                Terlihat plot errornya berada di sekitar angka yang sama meski nilai prediksinya bertambah, artinya nilai prediksi kita tidak terganggu oleh errornya.
+            </p>
+
+            <img src="{{ url_for('static', filename='Assets/Images/uji homoskedastitas.png') }}" alt="header" class="img-fluid">
+        </div>
+
+        <p class="text-dark text-lg-center text-tujuan" style="margin-bottom: 1em; font-weight: 600;">Berdasarkan Evaluasi Model</p>
+
+        <table class="table table-hover" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Training</th>
+                    <th scope="col">Testing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">MAE (Mean Absolute Error)</td>
+                    <td>392.0608567496847</td>
+                    <td>375.96163912312545</td>
+                </tr>
+                <tr>
+                    <td scope="row">MSE (Mean Squared Error)</td>
+                    <td>227438.18890006604</td>
+                    <td>213693.9747320759</td>
+                </tr>
+                <tr>
+                    <td scope="row">RMSE (Root Mean Square Error)</td>
+                    <td>476.90480066787546</td>
+                    <td>462.2704562613491</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="text-dark text-lg-start text-tujuan" style="margin-top: 2em;">
+            - MAE digunakan untuk mengukur besarnya rata-rata kesalahan dalam satu set perkiraan, tanpa mempertimbangkan arahnya.<br class="d-sm-inline d-none"/>
+            - MSE memberi tahu seberapa dekat garis regresi dengan sekumpulan titik. Hal ini dilakukan dengan mengambil jarak dari titik ke garis regresi (jarak ini adalah "kesalahan") dan mengkuadratkannya.<br class="d-sm-inline d-none"/>
+            - RMSE adalah akar kuadrat dari rata - rata kuadrat dari semua kesalahan. RMSE memberi tahu seberapa terkonsentrasi data di sekitar garis yang paling sesuai.
+        </p>
+
+        <div class="d-flex align-items-center justify-content-start gap-4 mt-5" style="margin-bottom: 2em;">
+            <p class="text-dark text-lg-start text-tujuan">
+                Pada regresi nilai RMSE, dan MAE terbaik adalah yang mendekati nilai 0. Sementara itu, dipengaruhi perbedaan bentuk data yang dimiliki,  Nilai MSE, RMSE, dan MAE yang dimiliki tidak menyentuh angka 0, akan tetapi tidak ada ambang batas yang tetap untuk RMSE, Kemungkinan tidak ada nilai yang dapat diterima untuk kriteria mana pun.<br class="d-sm-inline d-none"/>
+                Untuk itu kita melihat GAP antara nilai data training dan data test. Jika nilai RMSE/MAE data train < data test, maka dapat dipastika bahwa terjadi overfitting. Lalu, jika perbedaan antara nilai data train dan data test terlalu jauh maka kemungkinan terjadi underfitting.
+            </p>
+        </div>
+
+        <p class="text-dark text-lg-center text-tujuan" style="margin-bottom: 1em; font-weight: 500;">Pada hasil pengujian yang dimiliki, model yang kita pakai tidak mengalami overfitting maupun underfitting.</p>
+
+        <table class="table table-hover table-bordered" style="text-align: center;">
+            <tbody>
+                <tr>
+                    <td scope="col">Nilai R^2 (Koefisien Determinasi)</td>
+                    <td scope="col">0.5788233057147527</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="text-dark text-lg-start text-tujuan" style="margin-top: 2em;">
+            - r-square (R2) atau Koefisien Determinasi menunjukkan seberapa baik data cocok dengan model regresi.
+        </p>
+
+        <div class="d-flex align-items-center justify-content-start gap-4 mt-5" style="margin-bottom: 2em;">
+            <p class="text-dark text-lg-start text-tujuan">
+                Selanjutnya untuk nilai R2, nilai terbaik yaitu mendekati angka 1. nilai Rsquare sebesar > 0.67 menandakan model yang sangat kuat, jika nilai Rsquare > 0.33 berarti model moderat yang artinya model dapat diterima<br class="d-sm-inline d-none"/>
+                dan jika nilai Rsquare > 0.19 maka model dikatakan lemah dan tidak layak. Jika lebih kecil dari itu maka sebaiknya model tidak digunakan.
+            </p>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-start gap-4 mt-5" style="margin-bottom: 2em;">
+            <p class="text-dark text-lg-center text-tujuan" style="margin-bottom: 1em; font-weight: 600;">Berdasarkan Perbandingan Data Prediksi dengan Data Asli</p>
+            <img src="{{ url_for('static', filename='Assets/Images/perbandingan.png') }}" alt="header" class="img-fluid">
+        </div>
+
+        <p class="text-dark text-lg-start text-tujuan" style="margin-top: 2em;">
+            Pada plotting yang dilakukan dengan membandingkan data asli dan data hasil prediksi, bisa dilihat bahwa hasil prediksi masih satu track (masih searah) dan hasilnya tidak begitu jauh dengan data aslinya. Untuk itu hasil prediksi ini bisa diterima.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="h-100 w-100" id="footer" style="box-sizing: border-box; background-color: #78A6C8">
+
+    <div class="footer-2-3 container-xxl mx-auto position-relative p-0" style="font-family: 'Poppins', sans-serif">
+        <div class="border-color info-footer">
+            
+            <div class="mx-auto d-flex flex-column flex-lg-row align-items-center footer-info-space gap-4">
+                <div class="d-flex flex-lg-row flex-column align-items-center justify-content-center">
+                    <p style="margin: 0">Copyright © 2022 Prediksi Harga Pasar</p>
+                </div>
+
+                <nav class="mx-auto d-flex flex-wrap align-items-center justify-content-center gap-4">
+                    <a href="https://www.bps.go.id/" class="footer-link" style="text-decoration: none">Sumber Data</a>
+                    <span>|</span>
+                    <a href="mailto:deanalifahmad49@gmail.com" class="footer-link" style="text-decoration: none">Kontak</a>
+                    <span>|</span>
+                    <a href="{{url_for('index')}}" class="footer-link" style="text-decoration: none">Beranda</a>
+                </nav>
+
+                <a href="{{url_for('index')}}">
+                    <img style="margin-right:0.75rem" src="{{ url_for('static', filename='Assets/Logo_Web_Prediksi_Harga_Pasar-removebg-preview.png') }}" width="170" height="80" alt="Logo Website Prediksi Harga Pasar">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>

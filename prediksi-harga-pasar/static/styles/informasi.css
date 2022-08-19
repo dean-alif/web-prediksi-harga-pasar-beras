@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ... KETERANGAN DATA ... */
+.content-3-3 .btn:focus,
+.content-3-3 .btn:active {
+        outline: none !important;
+}
+
+.content-3-3 {
+    padding: 5rem 2rem;
+}
+
+.content-3-3 .img-hero {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+    .content-3-3 .right-column {
+        width: 100%;
+}
+
+.content-3-3 .title-text {
+        font: 600 1.875rem/2.25rem Poppins, sans-serif;
+        margin-bottom: 2.5rem;
+        letter-spacing: -0.025em;
+}
+
+.content-3-3 .title-caption {
+        font: 500 1.5rem/2rem Poppins, sans-serif;
+        margin-bottom: 1.25rem;
+}
+
+.content-3-3 .circle {
+        font: 500 1.25rem/1.75rem Poppins, sans-serif;
+        height: 3rem;
+        width: 3rem;
+        margin-bottom: 1.25rem;
+        border-radius: 9999px;
+        background-color: #524EEE;
+}
+
+.content-3-3 .text-caption {
+        font: 400 1rem/1.75rem Poppins, sans-serif;
+        letter-spacing: 0.025em;
+}
+
+/* ... TUJUAN ... */
+
+body .font-red-hat-display {
+    font-family: Poppins, sans-serif !important;
+    font-weight: 600!important;
+}
+
+.text-tujuan {
+    font: 400 1.25rem/1.75rem Poppins, sans-serif;
+}
+
+body .contact-us-light-lick {
+    background: #FFFFFF;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+body .contact-us-light-lick .headline {
+    font-size: 50px;
+    line-height: 140%;
+    text-align: center;
+    color: #16171C;
+}
+
+/* ... ALGORITMA ... */
+
+body .content .content {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+body .content .content .tagline {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #524EEE !important;
+}
+
+body .content .content .headline {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 67px;
+    color: #111F37;
+}
+
+body .content .content .subheadline {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    color: #627492;
+}
+
+body .content .content .button-header {
+    margin-top: 40px;
+}
+
+body .content .content .button-header .btn-started {
+    width: 150px;
+    height: 50px;
+    left: 562px;
+    top: 569px;
+    background: #524EEE;
+    border-radius: 8px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+body .content .content .button-header .btn-started:hover {
+    background-color: #322ce2;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    body .contact-us-light-lick .headline {
+        font-size: 40px;
+        line-height: 60px !important;
+    }
+
+    body .contact-us-light-lick .btn-contact {
+        width: 100%;
+    }
+
+    body .contact-us-light-lick .btn-demo {
+        width: 100%;
+    }
+}
+
+/* ... FOOTER ... */
+
+.footer-2-3 .list-space {
+    margin-bottom: 1.25rem;
+}
+
+.footer-2-3 .footer-text-title {
+    font: 600 1.5rem Poppins, sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.footer-2-3 .list-menu {
+    color: #707092;
+    text-decoration: none !important;
+}
+
+.footer-2-3 .list-menu:hover {
+    color: #ffffff;
+}
+
+.footer-2-3 hr.hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid rgba(46, 46, 90, 1);
+}
+
+.footer-2-3 .border-color {
+    color: #707092;
+}
+
+.footer-2-3 .footer-link {
+    color: #707092;
+}
+
+.footer-2-3 .footer-link:hover {
+    color: #ffffff;
+}
+
+.footer-2-3 .footer-info-space {
+    padding-top: 3rem;
+}
+
+.footer-2-3 .list-footer {
+    padding: 5rem 1rem 3rem 1rem;
+}
+
+.footer-2-3 .info-footer {
+    padding: 0 1rem 3rem;
+}
+
+@media (min-width: 576px) {
+    .footer-2-3 .list-footer {
+        padding: 5rem 2rem 3rem 2rem;
+    }
+
+    .footer-2-3 .info-footer {
+        padding: 0 2rem 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .content-3-3 .title-text {
+        font: 600 2.25rem/2.5rem Poppins, sans-serif;
+    }
+
+    .footer-2-3 .list-footer {
+        padding: 5rem 4rem 6rem 4rem;
+    }
+
+    .footer-2-3 .info-footer {
+        padding: 0 4rem 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .content-3-3 .img-hero {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .content-3-3 .right-column {
+        width: 50%;
+    }
+
+    .content-3-3 .circle {
+        margin-right: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    .footer-2-3 .list-footer {
+        padding: 5rem 6rem 6rem 6rem;
+    }
+
+    .footer-2-3 .info-footer {
+        padding: 0 6rem 3rem;
+    }
+}
